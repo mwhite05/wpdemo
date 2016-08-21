@@ -5,8 +5,13 @@
                 "source": "./",
                 "installTo": "./",
                 "excludes": [
-                    "mum-scripts"
+                    "mum-scripts",
+                    "apache"
                 ]
+            },
+            {
+                "source": "./apache",
+                "installTo": "/etc/apache2/sites-available"
             }
         ],
         "scripts": {
