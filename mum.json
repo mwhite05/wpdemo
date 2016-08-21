@@ -1,4 +1,20 @@
 {
+    "install": {
+        "map": [
+            {
+                "source": "./",
+                "installTo": "./",
+                "excludes": [
+                    "mum-scripts"
+                ]
+            }
+        ],
+        "scripts": {
+            "afterInstall": [
+                "./mum-scripts/after-install"
+            ]
+        }
+    },
     "dependencies": [
         {
             "source": "git@github.com:WordPress/WordPress.git#4.6",
