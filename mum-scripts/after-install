@@ -11,6 +11,8 @@ mv "./wp-config.php" "../wp-config.php"
 # Remove the sample configuration file from the web root
 rm "./wp-config-sample.php"
 
+mkdir "./wp-content/uploads"
+
 # Fix file and directory ownership / permissions
 chown -R www-data:www-data *
 chown www-data:www-data ../wp-config.php
